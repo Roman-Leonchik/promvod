@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promvod</title>
+        <link rel="stylesheet" href="./fonts/Ubuntu/stylesheet.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!-- Svg sprite для секции Services -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" hidden>
+            <symbol id="ic-construction" viewBox="0 0 53 52">
+                <path d="M50.9766 27.5234C51.8179 27.5234 52.5 26.8413 52.5 26V14.625C52.5 13.7837 51.8179 13.1016 50.9766 13.1016C49.9146 13.1016 29.168 13.1016 28.0234 13.1016V3.25C28.0234 2.40866 27.3413 1.72656 26.5 1.72656H10.25C9.40866 1.72656 8.72656 2.40866 8.72656 3.25V13.1016H2.02344C1.18209 13.1016 0.5 13.7837 0.5 14.625V26C0.5 26.8413 1.18209 27.5234 2.02344 27.5234H8.72656V35.8516H2.02344C1.18209 35.8516 0.5 36.5337 0.5 37.375V48.75C0.5 49.5913 1.18209 50.2734 2.02344 50.2734H50.9766C51.8179 50.2734 52.5 49.5913 52.5 48.75V37.375C52.5 36.5337 51.8179 35.8516 50.9766 35.8516H44.2734V27.5234H50.9766ZM49.4531 24.4766C47.8232 24.4766 37.7597 24.4766 36.1484 24.4766V16.1484H49.4531V24.4766ZM33.1016 24.4766C31.5059 24.4766 21.5046 24.4766 19.8984 24.4766V16.1484H33.1016V24.4766ZM11.7734 4.77344H24.9766V13.1016C23.3809 13.1016 13.3796 13.1016 11.7734 13.1016V4.77344ZM3.54688 24.4766V16.1484H16.8516V24.4766C15.2396 24.4766 5.17645 24.4766 3.54688 24.4766ZM11.7734 27.5234H24.9766V35.8516C23.3809 35.8516 13.3796 35.8516 11.7734 35.8516V27.5234ZM3.54688 38.8984H16.8516V47.2266H3.54688V38.8984ZM19.8984 38.8984H33.1016V47.2266H19.8984V38.8984ZM49.4531 38.8984V47.2266H36.1484V38.8984H49.4531ZM41.2266 35.8516C39.6309 35.8516 29.6296 35.8516 28.0234 35.8516V27.5234H41.2266V35.8516Z" fill="inherit"/>
+            </symbol>
+            <symbol id="ic-helmet" viewBox="0 0 48 48">
+                <path d="M45.1875 34.0856V29.625C45.1875 24.9949 43.6945 20.594 40.87 16.8982C38.3629 13.6176 34.8964 11.1016 31.026 9.73163C30.9183 7.50066 29.0697 5.71875 26.8125 5.71875H21.1875C18.9303 5.71875 17.0817 7.50066 16.974 9.73163C13.1036 11.1016 9.63713 13.6176 7.12997 16.8982C4.30547 20.594 2.8125 24.9949 2.8125 29.625V34.0856C1.17572 34.6661 0 36.2292 0 38.0625C0 40.3887 1.89253 42.2812 4.21875 42.2812H43.7812C46.1075 42.2812 48 40.3887 48 38.0625C48 36.2292 46.8243 34.6661 45.1875 34.0856ZM5.625 29.625C5.625 24.554 7.79119 19.8068 11.3438 16.4198V21.1875C11.3438 21.9641 11.9734 22.5938 12.75 22.5938C13.5266 22.5938 14.1562 21.9641 14.1562 21.1875V14.2141C15.0424 13.6484 15.9822 13.1549 16.9688 12.7442V24C16.9688 24.7766 17.5984 25.4062 18.375 25.4062C19.1516 25.4062 19.7812 24.7766 19.7812 24V10.7749C19.7813 10.771 19.7812 10.7672 19.7812 10.7633V9.9375C19.7812 9.16209 20.4121 8.53125 21.1875 8.53125H26.8125C27.5879 8.53125 28.2188 9.16209 28.2188 9.9375V10.763C28.2188 10.767 28.2187 10.7709 28.2188 10.775V24C28.2188 24.7766 28.8484 25.4062 29.625 25.4062C30.4016 25.4062 31.0312 24.7766 31.0312 24V12.7442C32.0178 13.155 32.9576 13.6485 33.8438 14.2141V21.1875C33.8438 21.9641 34.4734 22.5938 35.25 22.5938C36.0266 22.5938 36.6562 21.9641 36.6562 21.1875V16.4198C40.2088 19.8068 42.375 24.554 42.375 29.625V33.8438H5.625V29.625ZM43.7812 39.4688H4.21875C3.44334 39.4688 2.8125 38.8379 2.8125 38.0625C2.8125 37.2871 3.44334 36.6562 4.21875 36.6562H43.7812C44.5567 36.6562 45.1875 37.2871 45.1875 38.0625C45.1875 38.8379 44.5567 39.4688 43.7812 39.4688Z" fill="inherit"/>
+            </symbol>
+            <symbol id="ic-camera" viewBox="0 0 49 48">
+                <path d="M33.9623 33.4192V23.6888L39.5715 21.3653C44.0808 19.4975 46.2297 14.3094 44.362 9.80009C42.4942 5.2908 37.3061 3.14167 32.7967 5.00964L2.17353 17.6942L4.70854 21.4795L0.5 23.2227L3.85569 31.3241L9.68442 28.9098L12.2194 32.6949L25.5202 27.1855V33.4192C24.4261 34.5058 23.7473 36.0101 23.7473 37.6701C23.7473 40.9751 26.4362 43.6641 29.7412 43.6641C31.4014 43.6641 32.9058 42.9853 33.9922 41.8911H48.5V33.4491H33.9923C33.9823 33.4392 33.9723 33.4292 33.9623 33.4192ZM5.37782 27.6494L4.17473 24.7448L6.30454 23.8626L8.08861 26.5266L5.37782 27.6494ZM13.2733 29.2143L6.41929 18.9797L33.873 7.60802C36.9497 6.33377 40.4892 7.79983 41.7636 10.8764C43.0379 13.953 41.5717 17.4927 38.4952 18.767L13.2733 29.2143ZM28.3327 26.0206L31.1497 24.8537V31.8452C30.6977 31.7359 30.2264 31.6764 29.7412 31.6764C29.2561 31.6764 28.7847 31.7359 28.3327 31.8452V26.0206ZM29.7413 40.8516C27.9871 40.8516 26.5598 39.4243 26.5598 37.6701C26.5598 35.9158 27.9871 34.4886 29.7413 34.4886C31.4956 34.4886 32.9228 35.9158 32.9228 37.6701C32.9227 39.4244 31.4955 40.8516 29.7413 40.8516ZM35.5664 36.2617H45.6876V39.0787H35.5663C35.6756 38.6267 35.7351 38.1554 35.7351 37.6702C35.7351 37.1851 35.6757 36.7138 35.5664 36.2617Z" fill="inherit"/>
+            </symbol>
+            <symbol id="ic-construction" viewBox="0 0 49 48">
+                <path d="M17.1201 9.24719H8.72729C7.95056 9.24719 7.32104 9.87671 7.32104 10.6534C7.32104 11.4302 7.95056 12.0597 8.72729 12.0597H17.1201C17.8965 12.0597 18.5264 11.4302 18.5264 10.6534C18.5264 9.87671 17.8965 9.24719 17.1201 9.24719Z" fill="inherit"/>
+                <path d="M17.1201 14.8726H8.72729C7.95056 14.8726 7.32104 15.5021 7.32104 16.2788C7.32104 17.0555 7.95056 17.6851 8.72729 17.6851H17.1201C17.8965 17.6851 18.5264 17.0555 18.5264 16.2788C18.5264 15.5021 17.8965 14.8726 17.1201 14.8726Z" fill="inherit"/>
+                <path d="M17.1201 20.4979H8.72729C7.95056 20.4979 7.32104 21.1274 7.32104 21.9042C7.32104 22.6809 7.95056 23.3104 8.72729 23.3104H17.1201C17.8965 23.3104 18.5264 22.6809 18.5264 21.9042C18.5264 21.1274 17.8965 20.4979 17.1201 20.4979Z" fill="inherit"/>
+                <path d="M17.1201 26.1233H8.72729C7.95056 26.1233 7.32104 26.7528 7.32104 27.5295C7.32104 28.3063 7.95056 28.9358 8.72729 28.9358H17.1201C17.8965 28.9358 18.5264 28.3063 18.5264 27.5295C18.5264 26.7528 17.8965 26.1233 17.1201 26.1233Z" fill="inherit"/>
+                <path d="M17.1201 31.8428H8.72729C7.95056 31.8428 7.32104 32.4727 7.32104 33.249C7.32104 34.0258 7.95056 34.6553 8.72729 34.6553H17.1201C17.8965 34.6553 18.5264 34.0258 18.5264 33.249C18.5264 32.4727 17.8965 31.8428 17.1201 31.8428Z" fill="inherit"/>
+                <path d="M21.8428 12.0597H30.2356C31.0123 12.0597 31.6418 11.4302 31.6418 10.6534C31.6418 9.87671 31.0123 9.24719 30.2356 9.24719H21.8428C21.0664 9.24719 20.4365 9.87671 20.4365 10.6534C20.4365 11.4302 21.0664 12.0597 21.8428 12.0597Z" fill="inherit"/>
+                <path d="M21.8428 17.6851H30.2356C31.0123 17.6851 31.6418 17.0555 31.6418 16.2788C31.6418 15.5021 31.0123 14.8726 30.2356 14.8726H21.8428C21.0664 14.8726 20.4365 15.5021 20.4365 16.2788C20.4365 17.0555 21.0664 17.6851 21.8428 17.6851Z" fill="inherit"/>
+                <path d="M27.2913 21.9042C27.2913 21.1274 26.6617 20.4979 25.885 20.4979H21.8428C21.0664 20.4979 20.4365 21.1274 20.4365 21.9042C20.4365 22.6809 21.0664 23.3104 21.8428 23.3104H25.885C26.6617 23.3104 27.2913 22.6809 27.2913 21.9042Z" fill="inherit"/>
+                <path d="M40.6129 32.4365C40.0072 31.9505 39.1224 32.0476 38.6361 32.6533L35.0143 37.1687L32.772 35.5442C32.1432 35.0882 31.2636 35.2288 30.808 35.8576C30.3524 36.4868 30.4931 37.3661 31.1218 37.8216L34.4481 40.2317C34.6972 40.4118 34.9857 40.4994 35.2725 40.4994C35.6852 40.4994 36.0932 40.3181 36.37 39.9727L40.8301 34.4133C41.316 33.8076 41.219 32.9224 40.6129 32.4365Z" fill="inherit"/>
+                <path d="M44.1674 28.1195C42.3356 26.2555 39.9819 25.0807 37.4316 24.7346V5.66345C37.4316 2.54077 34.8909 0 31.7682 0H7.19507C4.07202 0 1.53125 2.54077 1.53125 5.66345V38.239C1.53125 41.3621 4.07202 43.9028 7.1947 43.9028H26.9587C29.1827 46.5154 32.3805 48 35.8401 48C42.2799 48 47.5189 42.7573 47.5189 36.3131C47.5189 33.2281 46.3287 30.3182 44.1674 28.1195ZM4.34375 38.239V5.66345C4.34375 4.09167 5.62292 2.8125 7.19507 2.8125H31.7682C33.3403 2.8125 34.6191 4.09167 34.6191 5.66345V24.6899C28.751 25.3026 24.1613 30.2812 24.1613 36.3131C24.1613 37.9849 24.5099 39.6013 25.1786 41.09H7.19507C5.62292 41.09 4.34375 39.8112 4.34375 38.239ZM35.8401 45.1875C33.0316 45.1875 30.4498 43.8981 28.7561 41.6503C27.5901 40.1023 26.9734 38.257 26.9734 36.3131C26.9734 31.4198 30.9512 27.4387 35.8401 27.4387C35.8862 27.4387 35.9327 27.4395 35.9789 27.4402L36.0005 27.4406C38.3344 27.4819 40.5225 28.4231 42.1616 30.0908C43.8026 31.7604 44.7064 33.9705 44.7064 36.3131C44.7064 41.2064 40.729 45.1875 35.8401 45.1875Z" fill="inherit"/>
+            </symbol>
+            <symbol id="arrow" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" fill="inherit"/>
+            </symbol>
+        </svg>
+        <!-- Svg sprite для секции Services -->
+        <header class="header">
+            <div class="container">
+                <div class="header-box">
+                    <a href="./index.html" class="logo">
+                        <img src="./img//svg/logo.svg" alt="Logo promvod">
+                    </a>
+                    <div class="menu-wrapp">
+                        <button class="menu-button js-menu-button"></button>
+                        <div class="menu-box js-menu-box">
+                            <div class="menu">
+                                <a href="./index.html" class="menu-link active">Главная</a>
+                                <a href="./services.html" class="menu-link">Сервис</a>
+                                <a href="./work.html" class="menu-link">Работы</a>
+                                <a href="./contact.html" class="menu-link">Контакты</a>
+                            </div>
+                            <div class="contacts-list">
+                                <div class="contacts-item">
+                                    <img src="./img/svg/iPhone.svg" alt="Phone icon">
+                                    <div class="contacts-text">
+                                        <span>Позвоните нам</span>
+                                        <a href="tel:+375291015522" class="contacts-link">+375(29) 105-55-22</a>
+                                    </div>
+                                </div> 
+                                <div class="contacts-item">
+                                    <img src="./img/svg/Chat.svg" alt="Chat icon">
+                                    <div class="contacts-text">
+                                        <span>Напишите нам</span>
+                                        <a href="mailto:vodom@tut.by" class="contacts-link">vodom@tut.by</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-box">
+            <section class="home-section">
+                <div class="swiper swiper-home js-swiper-home">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-home">
+                            <img class="slide-image" src="./img//index/slide-1.jpg" alt="">
+                            <div class="container slide-container">
+                                <h1 class="slide-title">РЕМОНТ И ОБСЛУЖИВАНИЕ СКВАЖИН НА ВОДУ</h1>
+                                <p class="slide-text">Мы – команда специалистов высшей категории. Нас сформировали годы тяжёлой и порой опасной, но в то же время интересной и любимой работы.</p>
+                                <div class="slide-button-list">
+                                    <a href="./work.html" class="button secondary-button">Наши работы</a>
+                                    <a href="./contact.html" class="button primary-button">связаться с нами</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-home">Slide 2</div>
+                        <div class="swiper-slide swiper-slide-home">Slide 3</div>
+                    </div>
+                    <div class="container pagination-container">
+                        <div class="swiper-pagination swiper-pagination-home"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="container info-container">
+                    <h2 class="section-title">Почему выбирают нас?</h2>
+                    <p class="info-decription">Наши приоритеты – гарантированное качество работ и честный договор.</p>
+                    <ul class="info-list">
+                        <li>
+                            <img src="./img/svg/ic-like.svg" alt="Like icon" class="info-list-icon">
+                            <h3 class="info-list-title">Опыт</h3>
+                            <span>Как и в любом деле, первое и самое важное – это опыт. Мы с гордостью  можем  заявить, что наша компания – одна из лучших.  В свой адрес мы получаем только положительные отзывы. Наши сотрудники составляют подробную смету для точного понимания заказчиком суммы затрат и исключения незапланированных расходов.</span>
+                        </li>
+                        <li>
+                            <img src="./img/svg/ic-hand.svg" alt="Hand icon" class="info-list-icon">
+                            <h3 class="info-list-title">Сертифицированное оборудование</h3>
+                            <span>В работе мы используем современное профессиональное и сертифицированное оборудование ведущих поставщиков: Grundfos, WILO, Pedrollo и других.</span>
+                        </li>
+                        <li>
+                            <img src="./img/svg/ic-slippers.svg" alt="Slippers icon" class="info-list-icon">
+                            <h3 class="info-list-title">Комфорт</h3>
+                            <span>Клиенты, как и скважины, требуют индивидуального подхода, и поэтому мы создали систему скидок на большой объём работ и набор льгот на последующее обслуживание. Также мы оказываем безвозмездную помощь по подбору и приобретению требуемых материалов и предоставляем возможность рассрочки платежа.</span>
+                        </li>
+                    </ul>
+                    <div class="question-box">
+                        <h2 class="question-title">Возникли вопросы? Мы ответим на них!</h2>
+                        <form class="question-form" method="post" id="js-form">
+                            <div class="question-list">
+                                <div class="input-box">
+                                    <label class="label">Имя</label>
+                                    <input type="text" placeholder="Ваше имя" name="name" class="input _req">
+                                </div>
+                                <div class="input-box">
+                                    <label class="label">Номер</label>
+                                    <input type="text" placeholder="Ваш номер" name="number" class="input _req">
+                                </div>
+                                <div class="input-box">
+                                    <label class="label">Вопрос</label>
+                                    <input type="text" placeholder="Ваш вопрос" name="question" class="input _req">
+                                </div>
+                            </div>
+                            <input type="submit" value="Отправить" class="button primary-button submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="services-section">
+                <div class="container">
+                    <h2 class="section-title">Наши услуги</h2>
+                    <p class="section-decription">Мы даем гарантию на все выполненные нами работы и поставленные материалы</p>
+                    <div class="services-list">
+                        <a href="./services.html" class="section-item">
+                            <img class="section-item-img" src="./img/index/wells.jpg" alt="Колодцы">
+                            <svg class="section-item-icon">
+                                <use xlink:href="#ic-construction"></use>
+                            </svg>
+                            <span class="section-item-text">Колодцы</span>
+                        </a>
+                        <a href="./services.html" class="section-item">
+                            <img class="section-item-img" src="./img/index/industrial-wells.png" alt="Колодцы">
+                            <svg class="section-item-icon">
+                                <use xlink:href="#ic-helmet"></use>
+                            </svg>
+                            <span class="section-item-text">Промышленные<br>скважины</span>
+                        </a>
+                        <a href="./services.html" class="section-item">
+                            <img class="section-item-img" src="./img/index/private-wells.png" alt="Колодцы">
+                            <svg class="section-item-icon">
+                                <use xlink:href="#ic-camera"></use>
+                            </svg>
+                            <span class="section-item-text">Частные<br>скважины</span>
+                        </a>
+                        <a href="./services.html" class="section-item">
+                            <img class="section-item-img" src="./img/index/other-services.jpg" alt="Колодцы">
+                            <svg class="section-item-icon">
+                                <use xlink:href="#ic-construction"></use>
+                            </svg>
+                            <span class="section-item-text">Другие<br>услуги</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="work-section">
+                <div class="container">
+                    <div>
+                        <div class="work-arrow-box arrow-box">
+                            <h2 class="section-title work-title">Наши работы</h2>
+                            <div class="arrow-box">
+                                <div class="swiper-button-prev">
+                                    <svg class="swiper-button-icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg class="swiper-button-icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper swiper-work js-swiper-work">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-work">
+                                    <img class="slide-work-image" src="./img/index/object-1.jpg" alt="Объект №1">
+                                    <div class="slide-work-content">
+                                        <h3 class="slide-work-title">Объект №1</h3>
+                                        <a href="./work.html" class="button default-button">Посмотреть</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-work">
+                                    <img class="slide-work-image" src="./img/index/object-2.jpg" alt="Объект №1">
+                                    <div class="slide-work-content">
+                                        <h3 class="slide-work-title">Объект №2</h3>
+                                        <a href="./work.html" class="button default-button">Посмотреть</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-work">
+                                    <img class="slide-work-image" src="./img/index/object-3.jpg" alt="Объект №1">
+                                    <div class="slide-work-content">
+                                        <h3 class="slide-work-title">Объект №3</h3>
+                                        <a href="./work.html" class="button default-button">Посмотреть</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-work">
+                                    <img class="slide-work-image" src="./img/index/object-4.jpg" alt="Объект №1">
+                                    <div class="slide-work-content">
+                                        <h3 class="slide-work-title">Объект №4</h3>
+                                        <a href="./work.html" class="button default-button">Посмотреть</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-work">
+                                    <img class="slide-work-image" src="./img/index/object-5.jpg" alt="Объект №1">
+                                    <div class="slide-work-content">
+                                        <h3 class="slide-work-title">Объект №5</h3>
+                                        <a href="./work.html" class="button default-button">Посмотреть</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="work-description-box">
+                        <p class="work-description-text">Весь список наших работы</p>
+                        <a href="./work.html" class="button primary-button">Посмотреть</a>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="container">
+                    <h2 class="section-title contact-title">Наш адреc</h2>
+                    <div class="contact-box">
+                        <div class="map-box">
+                            <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a33324eb6e50c2451aa26425d854308da790dfeab674cc978e6de2c45065018&amp;source=constructor" frameborder="0"></iframe>
+                        </div>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-circle contact-circle-1">92%</div>
+                                Положительных отзывов
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-circle contact-circle-2">20</div>
+                                Лет стажа
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-circle contact-circle-3">1562</div>
+                                Выполненных работ
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-circle contact-circle-4">100%</div>
+                                Успешно выполненных заказов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box">
+                    <div>
+                        <div class="footer-box-social">
+                            <a href="./index.html" class="logo">
+                                <img src="./img//svg/logo.svg" alt="Logo promvod">
+                            </a>
+                            <ul class="footer-social-list">
+                                <li>
+                                    <a href="whatsapp://send?phone=375291015522" class="footer-social-link">
+                                        <img src="./img/svg/Whatsapp.svg" alt="Whatsapp icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tg://resolve?domain=promvod" class="footer-social-link">
+                                        <img src="./img/svg/telegram.svg" alt="Telegram icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="viber://chat?number=375291015522" class="footer-social-link">
+                                        <img src="./img/svg/viber.svg" alt="Viber icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="footer-text">
+                            Все текстовые материалы сайта созданы по заказу компании. Имущественные права на текстовую и графическую информацию принадлежат ИП Протасовой Н.А. Использование материалов сайта только с письменного разрешения.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer-title">Контакты</h3>
+                        <ul class="footer-contacts-list">
+                            <li class="footer-contacts-item">
+                                <span>Адрес:</span>
+                                <span class="footer-contacts-text">Республика Беларусь , г. Минск , ул. Илимская 21</span>
+                            </li>
+                            <li class="footer-contacts-item">
+                                <span>Телефон:</span>
+                                <a href="tel:+375291015522" class="footer-contacts-text">+375 (29) 101-55-22</a>
+                            </li>
+                            <li class="footer-contacts-item">
+                                <span>Почта:</span>
+                                <a href="mailto:vodom@tut.by" class="footer-contacts-text">vodom@tut.by</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/default.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
