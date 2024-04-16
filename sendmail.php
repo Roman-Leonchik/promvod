@@ -1,5 +1,5 @@
 <?php
-
+    header("Access-Control-Allow-Origin: *");
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
