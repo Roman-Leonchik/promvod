@@ -35,6 +35,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1260px;
+    width: 100%;
     padding: 0 15px;
 }
 
@@ -332,7 +333,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;

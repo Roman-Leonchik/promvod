@@ -4,8 +4,8 @@ const swiperHome = new Swiper('.js-swiper-home', {
         disableOnInteraction: false,
     },
     grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
+    effect: "creative",
+    creativeEffect: {
         prev: {
             shadow: true,
             translate: [0, 0, -400],

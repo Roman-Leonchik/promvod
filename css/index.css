@@ -186,10 +186,6 @@
 }
 
 .question-box {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
     padding: 48px 32px;
     background-color: var(--white);
     border-radius: 4px;
@@ -230,13 +226,13 @@
 }
 
 .services-section {
-    padding: 160px 0 90px;
+    padding: 90px 0;
     text-align: center;
     box-shadow: 0 0 40px rgba(164, 169, 173, 0.25) inset;
     background-image: url("../img/index/services-bg.jpg");
     background-position: top left;
     @media (max-width: 960px) {
-        padding-top: 250px;
+        padding: 50px 0;
     };
 }
 
