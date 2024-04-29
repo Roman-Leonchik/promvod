@@ -422,3 +422,40 @@ body {
     font-weight: bold;
     color: var(--dark);
 }
+
+.breadcrumb {
+    padding: 40px 0;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 22px;
+    font-size: 14px;
+    color: #9A9CA5;
+}
+
+.breadcrumb-item {
+    position: relative;
+    &:not(:last-child) {
+        &:after {
+            content: "/";
+            position: absolute;
+            right: -14px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.breadcrumb-link {
+    color: var(--gray);
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    &:hover {
+        color: var(--blue);
+    }
+}

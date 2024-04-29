@@ -20,6 +20,7 @@
     bottom: 0;
     max-width: none;
     opacity: 0.5;
+    pointer-events: none;
     @media (max-width: 960px) {
         right: -200px;
         height: 400px;

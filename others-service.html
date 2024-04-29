@@ -3,12 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Promvod</title>
+        <meta property="og:title" content="- Промвод.by - Профессиональное обслуживание скважин на воду">
+        <meta property="og:description" content="Наша компания занимается обслуживанием питьевых колодцев не только в Минске, но и на территории всей Минской области. Мы предлагаем: чистка колодцев углубление колодцев ремонт колодцев дезинфекция колодцев обустройство донных фильтров водоснабжение из колодца утепление колодцев копка колодцев Чистка колодцев Вне зависимости от качества конструкции чистка колодца должна проводится с периодичностью один раз в 2-3 года. В ином случае вода может помутнеть, потерять Читать далее">
+        <meta property="og:site_name" content="Промвод.by - Профессиональное обслуживание скважин на воду">
+        <title>- Промвод.by - Профессиональное обслуживание скважин на воду</title>
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./fonts/Ubuntu/stylesheet.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
         <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/details.css">
     </head>
     <body>
+         <!-- Svg sprite для секции servis -->
+         <svg xmlns="http://www.w3.org/2000/svg" height="0" hidden>
+            <symbol id="arrow" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" fill="inherit"/>
+            </symbol>
+        </svg>
+        <!-- Svg sprite для секции servis -->
         <header class="header">
             <div class="container">
                 <div class="header-box">
@@ -22,7 +34,7 @@
                                 <a href="./index.html" class="menu-link">Главная</a>
                                 <a href="./servis.html" class="menu-link">Сервис</a>
                                 <a href="./work.html" class="menu-link">Работы</a>
-                                <a href="./contact.html" class="menu-link active">Контакты</a>
+                                <a href="./contact.html" class="menu-link">Контакты</a>
                             </div>
                             <div class="contacts-list">
                                 <div class="contacts-item">
@@ -46,7 +58,30 @@
             </div>
         </header>
         <div class="content-box">
-            <div class="container">Contact page</div>
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul class="breadcrumb-list">
+                        <li class="breadcrumb-item"><a href="./servis.html" class="breadcrumb-link">Сервисы</a></li>
+                        <li class="breadcrumb-item">Другие услуги</li>
+                    </ul>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <h1 class="details-title no-indentation">Другие<br>услуги</h1>
+                </div>
+            </section>
+            <section class="section-details-content">
+                <div class="container">
+                    <ul>
+                        <li>ремонт, сборка душевых кабин</li>
+                        <li>ремонт, установка бойлеров</li>
+                        <li>ремонт, монтаж систем отопления</li>
+                        <li>ремонт, монтаж систем водоснабжения</li>
+                        <li>ремонт, монтаж систем канализации</li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <footer class="footer">
             <div class="container">
@@ -98,6 +133,8 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/default.js"></script>
+        <script src="./js/details.js"></script>
     </body>
 </html>
