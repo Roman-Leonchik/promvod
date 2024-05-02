@@ -146,15 +146,10 @@
 }
 
 .info-section {
-    padding-top: 90px;
+    padding: 90px 0 ;
     text-align: center;
-}
-
-.info-container {
-    position: relative;
-    padding-bottom: 200px;
     @media (max-width: 960px) {
-        padding-bottom: 300px;
+        padding: 60px 0;
     };
 }
 
@@ -164,12 +159,15 @@
 }
 
 .info-list {
-    margin: 0;
+    margin: 0 0 90px;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 90px;
+    @media (max-width: 960px) {
+        margin-bottom: 60px;
+    };
 }
 
 .info-list-icon {
@@ -190,7 +188,6 @@
     background-color: var(--white);
     border-radius: 4px;
     box-shadow: 0 0 40px rgba(164, 169, 173, 0.25);
-    transform: translateY(50%);
     z-index: 2;
     @media (max-width: 960px) {
         padding: 32px 16px;
@@ -482,11 +479,6 @@
     @media (max-width: 1200px) {
         padding-left: 0;
     };
-}
-
-.map-iframe {
-    width: 100%;
-    height: 100%;
 }
 
 .contact-info-list {

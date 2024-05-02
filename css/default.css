@@ -459,3 +459,8 @@ body {
         color: var(--blue);
     }
 }
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+}

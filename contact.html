@@ -3,10 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Promvod</title>
+        <meta property="og:title" content="- Промвод.by - Профессиональное обслуживание скважин на воду">
+        <meta property="og:description" content="Промышленные скважины. Промвод предлагает полный комплекс услуг по ремонту скважин. Частные скважиныПроизводим работы по ремонту частных скважин &quot;под ключ&quot;. КолодцыПромвод предлагает один из самых надежных и экономичных способов обслуживания колодцев &quot;под ключ&quot;. Другие услугиВ данном разделе вы можете ознакомится с дополнительными видами работ компании. Наш девиз – НЕВОЗМОЖНОЕ ВОЗМОЖНО!! &nbsp;Кто мы? Мы – команда специалистов высшей категории. Нас сформировали годы тяжёлой&nbsp;Читать далее">
+        <meta property="og:site_name" content="Промвод.by - Профессиональное обслуживание скважин на воду">
+        <title>- Промвод.by - Профессиональное обслуживание скважин на воду</title>
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./fonts/Ubuntu/stylesheet.css">
         <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/contact.css">
     </head>
     <body>
         <header class="header">
@@ -21,7 +25,7 @@
                             <div class="menu">
                                 <a href="./index.html" class="menu-link">Главная</a>
                                 <a href="./servis.html" class="menu-link">Сервис</a>
-                                <a href="./work.html" class="menu-link">Работы</a>
+                                <a href="./portfolio.html" class="menu-link">Работы</a>
                                 <a href="./contact.html" class="menu-link active">Контакты</a>
                             </div>
                             <div class="contacts-list">
@@ -46,7 +50,70 @@
             </div>
         </header>
         <div class="content-box">
-            <div class="container">Contact page</div>
+            <section class="hero">
+                <img class="hero-bg" src="./img/contacts/hero-bg.png" alt="">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Контакты</h1>
+                        <p class="hero-text">Свяжитесь с нами по всем возникающим вопросам. Мы всегда рады любым вопросам и комментариям.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-contact">
+                <div class="container">
+                    <div class="contact-box">
+                        <div class="contact-text">
+                            <p>Для каждой группы клиентов мы создаем отдельное уникальное предложение по обслуживанию скважин на воду.</p>
+                            <p>Мы мгновенно отреагируем на ваш запрос и выполним работу в кратчайшие сроки. Наши приоритеты - гарантированное качество работ и честный договор.</p>
+                        </div>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <span class="contact-list-item-title">АДРЕСС</span>
+                                <span>г. Минск , ул. Илимская 21</span>
+                            </li>
+                            <li class="contact-list-item">
+                                <span class="contact-list-item-title">ВРЕМЯ РАБОТЫ</span>
+                                <span>С 9:00 до 21:00 </span>
+                            </li>
+                            <li class="contact-list-item">
+                                <span class="contact-list-item-title">ТЕЛЕФОН</span>
+                                <span>+375(29) 105-55-22</span>
+                            </li>
+                            <li class="contact-list-item">
+                                <span class="contact-list-item-title">E-MAIL</span>
+                                <span>vodom@tut.by</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map-box">
+                        <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a33324eb6e50c2451aa26425d854308da790dfeab674cc978e6de2c45065018&amp;source=constructor" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="question-question">
+                <div class="container">
+                    <div class="question-box">
+                        <h2 class="question-title">Возникли вопросы? Мы ответим на них!</h2>
+                        <form class="question-form" method="post" id="js-form">
+                            <div class="question-list">
+                                <div class="input-box">
+                                    <label class="label">Имя</label>
+                                    <input type="text" placeholder="Ваше имя" name="name" class="input _req">
+                                </div>
+                                <div class="input-box">
+                                    <label class="label">Номер</label>
+                                    <input type="text" placeholder="Ваш номер" name="number" class="input _req">
+                                </div>
+                                <div class="input-box">
+                                    <label class="label">Вопрос</label>
+                                    <input type="text" placeholder="Ваш вопрос" name="question" class="input _req">
+                                </div>
+                            </div>
+                            <input type="submit" value="Отправить" class="button primary-button submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer class="footer">
             <div class="container">
